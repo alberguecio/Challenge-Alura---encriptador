@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="contenedor-principal">
+
+        <div class="caja-imagen">
+            <div class="contenedor-imagen">
+                <img src="Logo.png" alt="imagen incognito" class="imagen-incognito">
+            </div>
+        </div>
+
+        <div class="caja-entrada">
+            <textarea class="textoEntrada" placeholder="Ingrese el texto aquí"></textarea>
+        </div>
+
+        <div class="caja-botones">
+            <div class="mensaje-aviso"> &#9888; Solo letras minúsculas y sin acentos</div>
+
+            <div class="contenedor-botones">
+                <button class="boton-encriptar botones" onclick="btnencriptar()">Encriptar</button>
+                <button class="boton-desencriptar botones" onclick="btndesencriptar()">Desencriptar </button>
+            </div>
+        </div>
+
+        <div class="caja-salida">
+
+            <textarea class="textoSalida" readonly placeholder="Resultado"></textarea>
+
+            <div class="caja-copiar">
+
+                <button class="boton-copiar botones" id="boton-copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+<footer>
+    <div class="pie">
+        <p>Desarrollado por : Alejandro Berguecio </p>
+    </div>
+</footer>
+
+<script src="javascript.js"></script>
+
+</html>
